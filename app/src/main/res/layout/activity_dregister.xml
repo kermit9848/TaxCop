@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/drgstr"
+    android:orientation="vertical"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+    tools:context=".DregisterActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="@font/norwester"
+        android:text="Daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        />
+
+    <EditText
+        android:id="@+id/id_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:fontFamily="@font/norwester"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/id_nik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Nomor Penduduk"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/norwester"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:id="@+id/id_npwp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="NPWP"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/norwester"
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/id_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Alamat"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/norwester"
+        android:inputType="textPostalAddress"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/id_notelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="No. Telp"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/norwester"
+        android:inputType="phone"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/id_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/norwester"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/id_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/norwester"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/id_conPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:textColorHint="#FFFFFF"
+        android:fontFamily="@font/norwester"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/agreeMentOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Creating an account your agree to our"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/norwester"
+        android:textColor="#263143"
+        />
+
+    <TextView
+        android:id="@+id/agreeMentTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms of service and privacy policy"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/norwester"
+        android:textColor="#263143"
+        />
+
+    <TextView
+        android:id="@+id/Login1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Sudah memiliki akun? Login sekarang!"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:gravity="center"
+        android:text="Daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        tools:layout_editor_absoluteX="119dp"
+
+        tools:layout_editor_absoluteY="615dp" />
+
+
+</LinearLayout>

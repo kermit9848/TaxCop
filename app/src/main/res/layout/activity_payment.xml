@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#f8f1f1"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payent Cards Method"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/drecycler_view"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Add New Card"
+        android:fontFamily="@font/norwester"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextNumberOne"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Card Number"
+
+        android:inputType="number"
+        android:drawableStart="@drawable/dcustom_credit_card_icon"
+        android:drawableLeft="@drawable/dic_credit_card"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/dcard_custom_input"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberTwo"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Card Holder Name"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/dcustom_person_icon"
+        android:drawableLeft="@drawable/dic_person"
+        android:drawablePadding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/dcard_custom_input"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/editTextNumberThree"
+            android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/dcard_custom_input"
+            android:ems="10"
+            android:hint="Expires In"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumberFour"
+            android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="@drawable/dcard_custom_input"
+            android:ems="10"
+            android:hint="CVV"
+            android:drawablePadding="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/dnewCardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dash_border"
+        android:padding="10dp"
+        app:backgroundTint="@null"
+        android:text="ADD NEW CARD"
+        android:fontFamily="@font/norwester"
+        android:textColor="#393e46"
+
+        />
+
+
+
+</LinearLayout>

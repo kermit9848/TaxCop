@@ -1,0 +1,32 @@
+//BUTTON SET ONCLICK
+        SKCK.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent skck = new Intent(HomeActivity.this, HomeActivity.class);
+                startActivity(skck);
+            }
+        });
+
+        Pajak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pajak = new Intent(HomeActivity.this, HomeActivity.class);
+                startActivity(pajak);
+            }
+        });
+
+        Berita.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent berita = new Intent(HomeActivity.this, HomeActivity.class);
+                startActivity(berita);
+            }
+        });
+
+        Laporan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent laporan = new Intent(HomeActivity.this, HomeActivity.class);
+                startActivity(laporan);
+            }
+        });

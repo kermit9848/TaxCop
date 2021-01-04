@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dhome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".HomepageActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backButt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="314dp"
+                android:layout_marginBottom="6dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/dback" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="210dp"
+                app:srcCompat="@drawable/dtaxcoplogo" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/norwester"
+            android:text="Selamat Datang, " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/PajakOnlineButt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/dbpjkonline" />
+
+            <ImageButton
+                android:id="@+id/SkckButt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/dbskckonline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/BeritaButt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/dbbrtakrmnl" />
+
+            <ImageButton
+                android:id="@+id/LaporanButt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/dblprnkrmnl" />
+
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+            <TableRow>
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/pjk" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/norwester"
+                    android:text="Menghitung dan membayar pajak  sekarang mudah!!"
+                    android:textColor="#21AE94" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+            <TableRow>
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/skc" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:fontFamily="@font/norwester"
+                    android:text="Membuat skck sekarang mudah!!"
+                    android:textColor="#21AE94" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,128 @@
+/*button.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    Intent intent_register = new Intent(DloginActivity.this, DregisterActivity.class);
+                    startActivity(intent_register);
+                }
+            });*/
+
+       /*Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (email.getText().toString().isEmpty() && pass.getText().toString().isEmpty()) {
+                    email.setHint("Isi dahulu!");
+                    pass.setHint("Isi dahulu!");
+
+                } else {
+                    Intent w = new Intent(DloginActivity.this, MainActivity.class);
+                    startActivity(w);
+                }
+            }
+        });
+
+        SignUP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_register = new Intent(DloginActivity.this, DregisterActivity.class);
+                startActivity(intent_register);
+            }
+        }); */
+
+    }
+
+    private Boolean validateEmail() {
+        String val = Email.getEditText().getText().toString();
+        if (val.isEmpty()) {
+            Email.setError("Field cannot be empty");
+            return false;
+        } else {
+            Email.setError(null);
+            Email.setErrorEnabled(false);
+            return true;
+        }
+    }
+
+    private Boolean validatePassword() {
+        String val = Password.getEditText().getText().toString();
+        if (val.isEmpty()) {
+            Password.setError("Field cannot be empty");
+            return false;
+        } else {
+            Password.setError(null);
+            Password.setErrorEnabled(false);
+            return true;
+        }
+    }
+
+    public void loginUser(View view) {
+        ///Validate Login Info 
+        if (!validateEmail() | !validatePassword()) {
+            return;
+        } else {
+            isUser();
+        }
+    }
+
+    private void isUser() {
+        final String userEnteredEmail = Email.getEditText().getText().toString().trim();
+        final String userEnteredPassword = Password.getEditText().getText().toString().trim();
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
+
+        Query checkUser = reference.orderByChild("email").equalTo(userEnteredEmail);
+
+        checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+
+                    Email.setError(null);
+                    Email.setErrorEnabled(false);
+
+                    String passwordFromDB = snapshot.child(userEnteredEmail).child("password").getValue(String.class);
+
+                    if(passwordFromDB.equals(userEnteredPassword)){
+
+                        String namaFromDB = snapshot.child(userEnteredEmail).child("nama").getValue(String.class);
+                        String nikFromDB = snapshot.child(userEnteredEmail).child("nik").getValue(String.class);
+                        String npwpFromDB = snapshot.child(userEnteredEmail).child("npwp").getValue(String.class);
+                        String alamatFromDB = snapshot.child(userEnteredEmail).child("alamat").getValue(String.class);
+                        String notelpFromDB = snapshot.child(userEnteredEmail).child("notelp").getValue(String.class);
+                        String emailFromDB = snapshot.child(userEnteredEmail).child("email").getValue(String.class);
+                        String conpassFromDB = snapshot.child(userEnteredEmail).child("conpass").getValue(String.class);
+
+                        Intent w = new Intent(getApplicationContext(),MainActivity.class);
+                        getIntent().putExtra("nama", namaFromDB);
+                        getIntent().putExtra("nik", nikFromDB);
+                        getIntent().putExtra("npwp", npwpFromDB);
+                        getIntent().putExtra("alamat", alamatFromDB);
+                        getIntent().putExtra("notelp", notelpFromDB);
+                        getIntent().putExtra("email", emailFromDB);
+                        getIntent().putExtra("password", passwordFromDB);
+                        getIntent().putExtra("conpass", conpassFromDB);
+
+                        startActivity(w);
+                    }else{
+                        Password.setError("Wrong Password");
+                    }
+                }else{
+                    Email.setError("No such User exist");
+                    Email.requestFocus();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+
+    //call signup screen
+    public void callSignUpScreen (View view){
+        Intent w = new Intent(DloginActivity.this, DregisterActivity.class);
+        startActivity(w);
+
+    }

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PajakmobActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="1dp"
+        android:gravity="center"
+        android:text="Pajak Mobil"
+        android:textColor="#ffff"
+        android:textSize="35sp"
+        app:fontFamily="@font/norwester" />
+
+    <EditText
+        android:id="@+id/pbk"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginRight="32dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="PBK"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <Button
+        android:id="@+id/htng"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginRight="105dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="Hitung" />
+
+    <EditText
+        android:id="@+id/bln"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginRight="195dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="Bulan"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <EditText
+        android:id="@+id/swk"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginRight="31dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="SWK"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <TextView
+        android:id="@+id/hsl"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="421dp"
+        android:layout_marginRight="19dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="Hasil:"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/bayar"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="544dp"
+        android:layout_marginRight="130dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="Bayar"
+        android:textColor="#ffff" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="608dp"
+        android:layout_marginRight="130dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="Kembali"
+        android:textColor="#ffff" />
+
+
+</RelativeLayout>

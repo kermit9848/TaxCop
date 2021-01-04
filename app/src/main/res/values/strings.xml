@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TaxCop</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string-array name="kasus">
+
+        <item>curanmor</item>
+        <item>narkoba</item>
+        <item>korupsi</item>
+
+
+    </string-array>
+
+    <string-array name="description">
+
+        <item>This Is random description</item>
+        <item>This Is random description</item>
+        <item>This Is random description</item>
+
+
+    </string-array>
+
+</resources>

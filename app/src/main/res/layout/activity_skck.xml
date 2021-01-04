@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkckActivity"
+    android:background="@drawable/bg"
+    >
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="SKCK(Surat Keterangan Catatan Kepolisian)"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        app:fontFamily="@font/norwester" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginRight="13dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="Nama"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <Button
+        android:id="@+id/glr"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginRight="172dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="Galeri" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="663dp"
+        android:layout_marginRight="127dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:text="Kembali"
+        android:textColor="#ffff" />
+
+    <Button
+        android:id="@+id/kirim"
+        android:layout_width="141dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="622dp"
+        android:layout_marginRight="127dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:text="Buat"
+        android:textColor="#ffff" />
+
+    <EditText
+        android:id="@+id/ktp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginRight="13dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="Nomor KTP"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <EditText
+        android:id="@+id/telp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginRight="13dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="Nomor Telepon"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <EditText
+        android:id="@+id/kk"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="259dp"
+        android:layout_marginRight="13dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="Nomor Kartu Keluarga"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="311dp"
+        android:layout_marginRight="13dp"
+        android:backgroundTint="#ffff"
+        android:fontFamily="@font/norwester"
+        android:hint="E-Mail"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginRight="0dp"
+        android:fontFamily="@font/norwester"
+        android:text="Foto KTP(Kartu Tanda Penduduk)"
+        android:textColor="#ffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/kmr"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginRight="300dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="Kamera" />
+
+    <ImageView
+        android:id="@+id/ltgmbr"
+        android:layout_width="391dp"
+        android:layout_height="163dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="441dp"
+        android:layout_marginRight="4dp" />
+
+</RelativeLayout>

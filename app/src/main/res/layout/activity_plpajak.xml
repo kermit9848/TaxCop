@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plpajakActivity"
+    android:background="@drawable/bg">
+
+    <Button
+        android:id="@+id/pmb"
+        android:layout_width="125dp"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="252dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="Pajak Mobil"
+        android:textColor="#ffff"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/pmt"
+        android:layout_width="124dp"
+        android:layout_height="63dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginRight="108dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="Pajak Motor"
+        android:textColor="#ffff"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="359dp"
+        android:layout_marginRight="74dp"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="Kembali"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:text="PAJAK"
+        android:textColor="#ffff"
+        android:textSize="35dp"
+        app:fontFamily="@font/norwester" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="149dp"
+        android:layout_height="132dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginRight="210dp"
+        app:srcCompat="@drawable/motor" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="132dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginRight="50dp"
+        app:srcCompat="@drawable/car" />
+
+</RelativeLayout>

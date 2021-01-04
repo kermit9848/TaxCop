@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/layout"
+    tools:context=".BayarActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="307dp"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:text="PEMBAYARAN"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:fontFamily="@font/norwester"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="330dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/kreditfront"
+        android:gravity="center"
+        android:text="VIRTUAL ACCOUNT (VA)"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <TextView
+        android:id="@+id/va"
+        android:layout_width="324dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/kreditfront"
+        android:gravity="center"
+        android:hint="NOMOR VIRTUAL ACCOUNT (VA)"
+        android:textColor="#ffff"
+        android:textColorHint="#ffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dcustom_button_dark_blue"
+        android:fontFamily="@font/norwester"
+        android:text="kembali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <ImageButton
+        android:id="@+id/bni"
+        android:layout_width="113dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        app:srcCompat="@drawable/bni" />
+
+    <ImageButton
+        android:id="@+id/bri"
+        android:layout_width="120dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377"
+        app:srcCompat="@drawable/bri" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

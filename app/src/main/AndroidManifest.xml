@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.driko.dtrytomergemarkone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dtaxcoplogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".ForgotPassword"></activity>
+        <activity android:name=".BeritaActivity" />
+        <activity android:name=".BayarActivity" />
+        <activity android:name=".PajakmotActivity" />
+        <activity android:name=".PajakmobActivity" />
+        <activity android:name=".plpajakActivity" />
+        <activity android:name=".SkckActivity" />
+        <activity android:name=".LaporanActivity" />
+        <activity android:name=".HomepageActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".DregisterActivity"
+            android:parentActivityName=".DloginActivity" />
+        <activity android:name=".DloginActivity" />
+        <activity android:name=".SimpleMoveActivity" />
+        <activity android:name=".DwelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

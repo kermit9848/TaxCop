@@ -1,0 +1,181 @@
+ /*Regist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rootNode = FirebaseDatabase.getInstance();
+                reference = rootNode.getReference("Users");
+
+                String nama = Nama.getEditText().getText().toString();
+                String nik = NIK.getEditText().getText().toString();
+                String npwp = NPWP.getEditText().getText().toString();
+                String alamat = Alamat.getEditText().getText().toString();
+                String notelp = NoTelp.getEditText().getText().toString();
+                String email = Email.getEditText().getText().toString();
+                String password = Password.getEditText().getText().toString();
+                String conpass = ConPass.getEditText().getText().toString();
+                UserHelper helperClass = new UserHelper(nama, nik, npwp, alamat, notelp, email, password, conpass);
+                reference.child(nik).setValue(helperClass);
+            }
+        });*/
+
+    }
+
+    private Boolean validateName() {
+        String val = Nama.getEditText().getText().toString();
+
+        if (val.isEmpty()) {
+            Nama.setError("Field cannot be empty");
+            return false;
+        }
+        else {
+            Nama.setError(null);
+            Nama.setErrorEnabled(false);
+            return true;
+        }
+    }
+    private Boolean validateNIK() {
+        String val = NIK.getEditText().getText().toString();
+        String noWhiteSpace = "(?=\\s+$)";
+
+        if (val.isEmpty()) {
+            NIK.setError("Field cannot be empty");
+            return false;
+        } else if (val.length() >= 16) {
+            NIK.setError("Username too long");
+            return false;
+        } else if (!val.matches(noWhiteSpace)) {
+            NIK.setError("White Spaces are not allowed");
+            return false;
+        } else {
+            NIK.setError(null);
+            NIK.setErrorEnabled(false);
+            return true;
+        }
+    }
+    private Boolean validateNPWP() {
+        String val = NPWP.getEditText().getText().toString();
+        String noWhiteSpace = "(?=\\s+$)";
+
+        if (val.isEmpty()) {
+            NPWP.setError("Field cannot be empty");
+            return false;
+        } else if (val.length() >= 16) {
+            NPWP.setError("Username too long");
+            return false;
+        } else if (!val.matches(noWhiteSpace)) {
+            NPWP.setError("White Spaces are not allowed");
+            return false;
+        } else {
+            NPWP.setError(null);
+            NPWP.setErrorEnabled(false);
+            return true;
+        }
+    }
+    private Boolean validateAlamat() {
+        String val = Alamat.getEditText().getText().toString();
+
+        if (val.isEmpty()) {
+            Alamat.setError("Field cannot be empty");
+            return false;
+        }
+        else {
+            Alamat.setError(null);
+            Alamat.setErrorEnabled(false);
+            return true;
+        }
+    }
+    private Boolean validateNoTelp() {
+        String val = NoTelp.getEditText().getText().toString();
+        String noWhiteSpace = "(?=\\s+$)";
+
+        if (val.isEmpty()) {
+            NoTelp.setError("Field cannot be empty");
+            return false;
+        } else if (val.length() >= 16) {
+            NoTelp.setError("Username too long");
+            return false;
+        } else if (!val.matches(noWhiteSpace)) {
+            NoTelp.setError("White Spaces are not allowed");
+            return false;
+        } else {
+            NoTelp.setError(null);
+            NoTelp.setErrorEnabled(false);
+            return true;
+        }
+    }
+    private Boolean validateEmail() {
+        String val = Email.getEditText().getText().toString();
+        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\\\.+[a-z]+";
+
+        if (val.isEmpty()) {
+            Email.setError("Field cannot be empty");
+            return false;
+        } else if (!val.matches(emailPattern)) {
+            Email.setError("Invalid email address");
+            return false;
+        } else {
+            Email.setError(null);
+            Email.setErrorEnabled(false);
+            return true;
+        }
+    }
+    private Boolean validatePassword() {
+        String val = Password.getEditText().getText().toString();
+        String passwordVal = "^" +
+                "(?=.*[0-9])" +         //at least 1 digit
+                "(?=.*[a-z])" +         //at least 1 lower case letter
+                "(?=.*[A-Z])" +         //at least 1 upper case letter
+                "(?=.*[a-zA-Z])" +      //any letter
+                "(?=.*[@#$%^&+=])" +    //at least 1 special character
+                "(?=\\S+$)" +           //no white spaces
+                ".{4,}" +               //at least 4 characters
+                "$";
+
+        if (val.isEmpty()) {
+            Password.setError("Field cannot be empty");
+            return false;
+        } else if (!val.matches(passwordVal)) {
+            Password.setError("Password is too weak");
+            return false;
+        } else {
+            Password.setError(null);
+            Password.setErrorEnabled(false);
+            return true;
+        }
+    }
+    private Boolean validateConPass(){
+        String val = ConPass.getEditText().getText().toString();
+        if (val.isEmpty()) {
+            ConPass.setError("Field cannot be empty");
+            return false;
+        } else if (!ConPass.equals(Password)) {
+            ConPass.setError("");
+            return false;
+        } else {
+            ConPass.setError(null);
+            ConPass.setErrorEnabled(false);
+            return true;
+        }
+    }
+
+    public void registerUser(View view) {
+
+        if(!validateName() | !validateNIK() | !validateNPWP() | !validateAlamat() | !validateNoTelp() | !validateEmail() | !validatePassword() | !validateConPass())
+        {
+            return;
+        }else{
+            Intent w = new Intent(DregisterActivity.this, DloginActivity.class);
+            startActivity(w);
+        }
+
+        String nama = Nama.getEditText().getText().toString();
+        String nik = NIK.getEditText().getText().toString();
+        String npwp = NPWP.getEditText().getText().toString();
+        String alamat = Alamat.getEditText().getText().toString();
+        String notelp = NoTelp.getEditText().getText().toString();
+        String email = Email.getEditText().getText().toString();
+        String password = Password.getEditText().getText().toString();
+        String conpass = ConPass.getEditText().getText().toString();
+        UserHelper helperClass = new UserHelper(nama, nik, npwp, alamat, notelp, email, password, conpass);
+        reference.child(email).setValue(helperClass);
+
+    }
